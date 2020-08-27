@@ -1,17 +1,26 @@
 Summary
-Our proposal was to collect and aggregate data from the Mainroads and DPIRD weather stations data sources for the Christmas period in 2017, this would collate information for a further analysis to be carried out if required. 
+Our proposal was to collect data for weather and traffic conditions in the Perth Metro region for the week of 25th to 31st of December 2017 using the 5 nearest weather stations.
+Our original data source DPIRD turned out to be too convoluted to be able to extract the data so we used the Bureau of Meteorology data instead. 
+This collated information could then be used for further analysis if required. 
+
 
 Data Sources
 Mainroads open data - "Historic Incidents"
-Weather.agric.wa.gov.au - "DPIRD Weather stations"
+BOM.wa.gov.au - "DPIRD Weather stations"
 
 Analysis
-Mainroads data was formatted in a csv file which we then transformed and cleaned up in pandas, we reduced the columns from 18 down to 5. We needed to have a date which included an hourly time stamp so that we could aggregate the weather data and find the nearest weather station to the incident, further analysis could then be carried out to see if the weather may have been a factor. 
+Mainroads data was formatted in a csv file which we then transformed and cleaned up in pandas, we reduced the columns from 18 down to 5. We needed to have a date column so that we could 
+aggregate the weather data and find the nearest weather station to the incident, further analysis could then be carried out to see if the weather may have been a factor. 
 
 The columns we used for the mainroads transformed data were:
-	1. start of incident date and time stamp, this tells us when the incident is first reported
+	1. start of incident date, this tells us when the incident is first reported. We needed to split this column as it had time stamp on it also - to be able to join to the weather data
 	2. the incident type, this tells us if it was a bushfire, crash, breakdown and so on
 	3. Traffic condition, this tell us if it caused any lanes to be closed on the road the incident happened
-	4. Latitude & Longitude, these two we kept in the data frame so that we could aggregate the weather data and find the closest weather station to the incident.
+	4. Latitude & Longitude, these two we kept in the data frame so that we could aggregate the weather data and find the closest weather station to the incident. However after 
 
 The columns we used for the weather transformed data were: 
+    1.
+    2.
+    3.
+    4.
+
