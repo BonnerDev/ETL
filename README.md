@@ -1,4 +1,4 @@
 # ETL
 
 Proposal:
-Find data for weather and traffic conditions in the Metro region for the week of 25th to 31st of December 2017 using the 5 nearest weather stations to metro area
+Find data for weather and traffic conditions in the Perth Metro region for 2017 using weather data recorded from the Perth Metro BOM weather station: 009225
